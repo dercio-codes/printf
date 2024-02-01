@@ -1,8 +1,15 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 
-int simple_printf(const char *format, ...) {
+/**
+ * _printf - Printf function
+ * @format: format.
+ * Return: Printed chars.
+ */
+
+int _printf(const char *format, ...) {
     va_list args;
     va_start(args, format);
 
